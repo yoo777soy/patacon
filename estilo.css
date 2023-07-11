@@ -1,176 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans';
-}
-body{
-    background-image: url(imagenes/pata.jpg);
-}
-
-.container {
-   
-    width: 250px;
-    height: 70px;
-    left: 200px;
-    margin-left: 70px;
-    padding: 5px 0 5px;
-    border-radius: 250px;
-    box-sizing: content-box;
-    border-bottom-left-radius: 12px 0 12px;
-    border: rgb(241, 235, 235);
-    padding: 1px 0;
-}
-
-.home-wrapper {
-    
-    background-size: cover;
-    color: #000;
-}
-/* ¨¨´ç´ççççç+``^^^çççççç-.-.ñ´´ç´´¨¨*^¿?=)(:;;__ç´´´´ */
-
-/*header*/
-
 header {
-    position: relative;
-    /*fija el elemento en el html*/
-    width: 100%;
-    background-color: var(--colorHeader);
-    padding: 10px 0;
-    align-content: center;
+  background-image: url(imagenes/pata.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
 
-
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
-header nav a {
-    color: rgb(46, 25, 163);
-    text-decoration: none;
-    margin-left: 10px;
-    font-weight: bold;
-    padding: 10px 15px;
-}
-
-header nav a:hover {
-    color: #0c0b0c;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-header nav a.active {
-    color: rgb(153, 32, 62) !important;
-    /* background-color: #6b066e3f; */
-    border-radius: 3px;
-}
-
-
-/*home*/
-
-
-/*los identificadores (id) en el html, su sintaxis en css es el numeral (#) */
-
-#home {
+header h1 {
     text-align: center;
-    padding: 200px 0 150px;
+    font-size: 35px;
+    /* background-color: #000; */
+    color: #131212;
+    padding: 30px 0;
 }
 
-#home h1 {
-    margin-bottom: 40px;
-    line-height: 1.2;
-    color: #25d366;
-   
+.contenedor {
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* oculto lo que queda fuera del .contenedor */
+    contain: paint;
 }
-.home-wrapper  v  
-
-
-#home p {
-    font-size: 1.4rem;
-    margin-top: 40px;
-    color: #b82424;
-}
-
-#home .divider {
-    width: 250px;
-    margin: 0 auto;
-    border-top: 5px solid #fe4336;
-}
-
-#home .social {
-    margin-top: 80px;
-}
-
-#home .social a {
-    color: var(--colorFondo);
-    display: inline-block;
-    background-color: var(--colorFooter);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 10px;
-    line-height: 50px;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s;
-}
-
-#home .social a:hover {
-    background-color: #fed136;
-}
-
-#home {
-    text-align: center;
-    padding: 200px 0 150px;
-}
-
-#home h1 {
-    margin-bottom: 40px;
-    line-height: 1.2;
-    text-align: center;
-}
-
-#home p {
-    font-size: 1.4rem;
-    margin-top: 40px;
-    color: #fff;
-}
-
-#home .divider {
-    width: 250px;
-    margin: 0 auto;
-    border-top: 5px solid #fe4336;
-}
-
-#home .social {
-    margin-top: 80px;
-}
-
-#home .social a {
-    color: var(--colorFondo);
-    display: inline-block;
-    background-color: var(--colorFooter);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 10px;
-    line-height: 50px;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s;
-}
-
-#home .social a:hover {
-    background-color: #fed136;
-}
-
 
 
 /* SECCION CONTENEDOR DE ITEMS */
@@ -209,7 +60,6 @@ header nav a.active {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    color: #4f0c7c;
 }
 
 .contenedor .contenedor-items .item .precio-item {
@@ -217,7 +67,6 @@ header nav a.active {
     text-align: center;
     font-weight: bold;
     font-size: 22px;
-    color: rgb(216, 6, 6);
 }
 
 .contenedor .contenedor-items .item .boton-item {
@@ -274,7 +123,6 @@ header nav a.active {
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
-    color: white;
 }
 
 .carrito .carrito-item .selector-cantidad {
@@ -381,56 +229,132 @@ header nav a.active {
     }
 }
 
-p   {
-    align-content: center;    
-    background-color: rgb(233, 227, 235);
- padding-top: 3px;
-    padding-bottom: 3px;
-    border: solid 2px RED;
-    border-right: solid 2PX chocolate;
-    border-left: solid 2PX goldenrod;
-    border-bottom: solid 2PX rgb(53, 51, 51);
-    border-radius: 12px;
-    text-align: center;
+header nav {
+    float: right;
+    margin-top: 1px;
+    padding: 25%;
 }
 
-h2 {
-    align-content: center;
-    margin-left: 10%;
-    margin-right: 33%;
-    
-    padding-left: 97px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+h1 {
+    margin-bottom: 40px;
+    margin-left: 40%;
+    line-height: 1.2;
 }
 
-h3 {
- 
-    align-content: center;    
-    background-color: rgb(233, 227, 235);
- padding-top: 3px;
-    padding-bottom: 3px;
-    border: solid 2px RED;
-    border-right: solid 2PX chocolate;
-    border-left: solid 2PX goldenrod;
-    border-bottom: solid 2PX rgb(53, 51, 51);
-    border-radius: 12px;
-    text-align: center;
-    
-    color: rgb(207, 82, 9);
+
+
+h1 {
+    font-family: var(--titulos);
+    font-size: 3.8rem;
+    font-weight: bolder;
+    color: rgb(41, 58, 57);
+    margin-left: 25%;
+    padding-top: 15%;
 }
 
-h4,
 h5 {
-    background-color:wheat;
+    background-color: #c5cec9;
     text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 3px black;
+    border-radius: 25%;
+    padding-left: 5px;
+}
+
+p {
+    background-color: rgb(212, 185, 230);
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 7px;
+    border-radius: 25%;
+    border: solid 3px rgb(11, 12, 11);
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 25%;
-    margin-top: 12px;
-    margin-bottom: 12px;
+}
+h3{background-color: rgb(212, 185, 230);
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 7px;
     border-radius: 25%;
-    border: solid 3px black;
+    border: solid 3px rgb(11, 12, 11);
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+
+    
+
+
+
+h6 {
+    padding-left: 45px;
+}
+
+.home-wrapper {
+
+    background-size: cover;
+    /* color: rgb(160, 53, 182); */
+}
+
+header nav {
+    float: right;
+    margin-top: 1px;
+    padding: 25%;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    background: #1b1b1b;
+    transition: left 0.4s;
+}
+
+.sidebar.show {
+    left: 0px;
+}
+
+.sidebar.text {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+nav ul {
+    background: #1b1b1b;
+    height: 100px;
+    width: 100px;
+    list-style: none;
+}
+
+nav ul li {
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul li :last-child {
+    border-bottom: 1px solid rgb(77, 178, 232);
+}
+
+nav ul.feat-show.show {
+    display: block;
+}
+
+nav ul.serv-show.show1 {
+    display: block;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    color: white;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
 }
 
 .btn-wsp {
@@ -462,7 +386,7 @@ h5 {
     }
 }
 
-a {
+.social a {
     color: rgb(16, 18, 27);
     display: inline-block;
     background-color: #4c8665;
@@ -471,25 +395,39 @@ a {
     height: 50px;
     font-size: 24px;
     font-weight: bold;
-    margin-right: 30%;
+    margin-right: 50%px;
     line-height: 30px;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -ms-transition: all .3s;
     transition: all .3s;
     padding: 12px;
-    margin-left: 50%;
+    margin-left: 25%;
     margin-bottom: 15px;
 }
 
 .social a:hover {
     background-color: #e8d6eb;
 }
-h6{
-    align-content: center;
-    margin-left: 15px;
-    color: red
+
+
+/* estilos para el cuerpo (body)
+se utiliza el selector de etiqueta*/
+
+
+/*configuraciones globales*/
+
+#home .social {
+    margin-top: 80px;
 }
-imag{
-    text-align: center;
+
+iframe {
+    margin-left: 25%;
+}
+
+form {
+    margin-left: 25%;
+}
+p,h3{
+    color: red;
 }
