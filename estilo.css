@@ -288,6 +288,7 @@ h3{background-color: rgb(212, 185, 230);
     
 
 
+}
 
 h6 {
     padding-left: 45px;
@@ -427,7 +428,4 @@ iframe {
 
 form {
     margin-left: 25%;
-}
-p,h3{
-    color: red;
 }
